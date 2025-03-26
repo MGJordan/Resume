@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Michael Jordan
+% Based off of: https://github.com/jakegut/resume/resume.tex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+    }
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+%\renewcommand{\rmdefault}{cmtt}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeCompany}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 & #3 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumePosition}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.96\textwidth}[t]{p{9cm}p{6cm}@{\extracolsep{\fill}}r}
+      #1 & \textit{#2} & \textit{#3} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSentences}[5]{
+  \vspace{-10pt}\item
+    \begin{flushleft}
+      \textit{\small{#1}} \\
+    \end{flushleft}
+}
+
+\newcommand{\resumeEducationTwo}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+      \small{#5} & #6
+    \end{tabular*}\vspace{-8pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeEducationListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeEducationListEnd}{\end{itemize}}
+\newcommand{\resumeCompaniesListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeCompaniesListEnd}{\end{itemize}}
+\newcommand{\resumePositionListStart}{\begin{itemize}[leftmargin=0.075in, label={}]\vspace{-6pt}}
+\newcommand{\resumePositionListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeSentencesListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSentencesListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%-----------Name + Contact-----------
+\begin{center}
+    \textbf{\Huge \scshape Michael Jordan} \\
+    \small +44 07480-743079 $|$ \href{mailto:x@x.com}{\underline{mgjordan314@gmail.com}} $|$
+    \href{https://github.com/...}{\underline{github.com/MGJordan}}
+\end{center}\vspace{-20pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeEducationListStart
+    \resumeEducationTwo
+      {Imperial College}{London, UK}
+      {Master of Science (MSc) in Ecology, Evolution, and Conservation (Distinction)}{2023 - 2024}{- Dissertation using DNA metabarcoding and barcoding to measure biodiversity. Coded in R.}{}
+    \resumeEducation
+      {Harvard University}{Cambridge, MA, USA}
+      {Bachelor of Arts (BA) in Economics}{2004 - 2008}{}
+  \resumeEducationListEnd\vspace{-5pt}
+    
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeCompaniesListStart
+
+    \resumeCompany{Google / Alphabet}{}{}
+
+        \resumePositionListStart
+        
+          \resumePosition{Business Analyst Manager - YouTube}{Singapore}{2021 - 2023}
+            \resumeItemListStart
+              \resumeItem{Managed 3 person team providing data and statistical analysis for Trust \& Safety content moderation operations (policy enforcement decision quality, vendor utilization) for an $\sim$400 person org with 24/7 global coverage. Collaborated with cross-functional Directors to set annual goals and quarterly objectives and key results (OKRs). Owned insights in VP-level forum. Planned and led strategy offsite. Mentored team for professional development.}
+              \resumeItem{Restructured team time management away from low value-add tasks and toward thought leadership by reducing operational and technical debt (streamlined processes to allow stakeholders to self-service, won stakeholder buy-in on service level agreements, clarified roles \& responsibilities, worked with Data Engineering to improve upstream data, increased rigor of coding standards). Reduced time spent on manual tasks and bug bashing by $\sim$20\%.}
+              \resumeItem{Collaborated with Detection Engineering and Global Scaled Operations to synthesize disparate processes into a method to capture cost savings opportunities created by increases in machine-learning model precision and recall.}
+            \resumeItemListEnd
+    
+          \resumePosition{Senior Business Analyst - YouTube}{Singapore}{2019 - 2021}
+            \resumeItemListStart
+              \resumeItem{Owned data and statistical analysis for Trust \& Safety content moderation global operations. Developed metrics, generated actionable insights for VP-and-Director-level stakeholders, used data to solve business problems, contributed to strategic planning, project managed cross-functional initiatives to increase operational efficiency, conducted root cause analysis into metric trends, wrote business requirement documents (BRDs), coded Structured Query Language (SQL) data pipelines, built data visualizations and dashboards. Earned level promotion.}
+              \resumeItem{Developed and scaled a vendor utilization metric (defined metric, won buy-in from cross-functional stakeholders, coded SQL pipeline, built reporting, owned roll-out). Collaborated with cross-functional stakeholders to project manage initiatives to improve it. Increased utilization from 55\% to 85\%, preventing $\sim$\$45M/year in lost spend.}
+              \resumeItem{Coded SQL pipeline to support COVID business contingency planning. Caught and prevented multiple P0 bugs.}
+            \resumeItemListEnd
+        
+        \resumePosition
+          {Financial Analyst - Android}{Singapore}{2017 - 2019}
+          \resumeItemListStart
+            \resumeItem{Owned financial planning and analysis (FP\&A) for Android partnerships in Asia-Pacific. Designed valuation models in Google Sheets. Reviewed partnership deals. Provided actionable insights to business development team. Contributed analysis to strategic plans and pitch decks. Coded data pipeline in SQL, R, and Python.}
+          \resumeItemListEnd
+          
+        \resumePosition
+          {Solutions Consultant - gTech}{Cambridge, MA / NYC, NY, USA}{2012 - 2017}
+          \resumeItemListStart
+            \resumeItem{Debugged issues in Display Network advertising bidding algorithms for clients and internal stakeholders. Queried SQL databases. Built reporting. Contributed to product development.  Earned level promotion.}
+          \resumeItemListEnd
+    
+        \resumePositionListEnd
+
+  \resumeCompaniesListEnd
+
+  \resumeSentencesListStart
+  
+      \resumeSentences
+      {Experience prior to 2012 includes analytical roles at two venture-backed startups, Meebo (social media and digital advertising) and Mindset Media (advertising tech) as well as in management consulting at Alliance Consulting Group.}
+      
+  \resumeSentencesListEnd
+  
+
+%-----------Skills-----------
+\vspace{-5pt}\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages, Software, \& OS}{: SQL, R, some Python, some Bash, Google Sheets, Microsoft Excel, Windows, Linux} \\
+     \textbf{Software Development Tools}{: Git, Visual Studio Code} \\
+     \textbf{Statistics}{: Causal Inference (e.g., t-test, F-test, chi-squared test), Supervised Machine Learning (e.g., GLMs such as Logistic Regression, Mixed Models), Unsupervised Machine Learning (e.g., PCA, PCoA, NMDS, K-means clustering)} \\
+     \textbf{Bioinformatics Software \& Systems}{: BLAST, BOLD, LULU, DADA2, IDTAXA, GeneiousPrime} \\
+     \textbf{Molecular Biology}{: DNA Extraction, Cleanup, \& Quantification, Polymerase Chain Reaction, Gel Electrophoresis, MiSeq Sequencing, Sanger Sequencing}
+    }}
+ \end{itemize}
+
+%-----------Interests-----------
+\vspace{-16pt}\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Endurance Sports (Personal Best)}{: Ironman (13:33:37), half Ironman (5:16:24), marathon (2:58:40), 5K (18:43)} \\
+     \textbf{Volunteering}{: \href{https://twc2.org.sg/}{Transient Workers Count Too}, \href{https://www.rosiesplace.org/}{Rosie's Place}, \href{https://maralliance.org/}{MarAlliance}, \href{https://www.nss.org.sg/}{Singapore Nature Society}} \\
+     %\textbf{Favorite Recent Book}{: \href{https://www.goodreads.com/book/show/59575939-an-%immense-world}{An Immense World: How Animal Senses Reveal the Hidden Realms Around Us}}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
