@@ -84,19 +84,20 @@
     \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\resumeSentences}[5]{
+\newcommand{\resumeSentences}[1]{
   \vspace{-10pt}\item
     \begin{flushleft}
       \textit{\small{#1}} \\
     \end{flushleft}
 }
 
-\newcommand{\resumeEducationTwo}[6]{
+\newcommand{\resumeEducationTwo}[8]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{ #4} \\
-      \small{#5} & #6
+      \small{#5} & #6 \\
+      \small{#7} & #8
     \end{tabular*}\vspace{-8pt}
 }
 
@@ -122,8 +123,8 @@
 %-----------Name + Contact-----------
 \begin{center}
     \textbf{\Huge \scshape Michael Jordan} \\
-    \small +44 07480-743079 $|$ \href{mailto:x@x.com}{\underline{mgjordan314@gmail.com}} $|$
-    \href{https://github.com/...}{\underline{github.com/MGJordan}}
+    \small +44 7480-743079 $|$ \href{mailto:mgjordan314@gmail.com}{\underline{mgjordan314@gmail.com}} $|$
+    \href{https://github.com/MGJordan}{\underline{github.com/MGJordan}}
 \end{center}\vspace{-20pt}
 
 
@@ -132,10 +133,11 @@
   \resumeEducationListStart
     \resumeEducationTwo
       {Imperial College}{London, UK}
-      {Master of Science (MSc) in Ecology, Evolution, and Conservation (Distinction)}{2023 - 2024}{- Dissertation using DNA metabarcoding and barcoding to measure biodiversity. Coded in R.}{}
+      {Master of Science (MSc) in Ecology, Evolution, and Conservation (Distinction)}{2023–2024}{- Dissertation using DNA metabarcoding and barcoding to measure biodiversity. Coded in R.}{}
+      {- Coursework in Geographic Information Systems (GIS), Genomics, Bioinformatics, Advanced Statistics.}{}
     \resumeEducation
       {Harvard University}{Cambridge, MA, USA}
-      {Bachelor of Arts (BA) in Economics}{2004 - 2008}{}
+      {Bachelor of Arts (BA) in Economics}{2004–2008}{}
   \resumeEducationListEnd\vspace{-5pt}
     
 
@@ -147,30 +149,30 @@
 
         \resumePositionListStart
         
-          \resumePosition{Business Analyst Manager - YouTube}{Singapore}{2021 - 2023}
+          \resumePosition{Business Analyst Manager - YouTube}{Singapore}{2021–2023}
             \resumeItemListStart
-              \resumeItem{Managed 3 person team providing data and statistical analysis for Trust \& Safety content moderation operations (policy enforcement decision quality, vendor utilization) for an $\sim$400 person org with 24/7 global coverage. Collaborated with cross-functional Directors to set annual goals and quarterly objectives and key results (OKRs). Owned insights in VP-level forum. Planned and led strategy offsite. Mentored team for professional development.}
-              \resumeItem{Restructured team time management away from low value-add tasks and toward thought leadership by reducing operational and technical debt (streamlined processes to allow stakeholders to self-service, won stakeholder buy-in on service level agreements, clarified roles \& responsibilities, worked with Data Engineering to improve upstream data, increased rigor of coding standards). Reduced time spent on manual tasks and bug bashing by $\sim$20\%.}
+              \resumeItem{Managed 3-person team providing data and statistical analysis for Trust \& Safety content moderation operations (policy enforcement decision quality, vendor utilization) for an $\sim$400 person org with 24/7 global coverage. Collaborated with cross-functional Directors to set annual goals and quarterly objectives and key results (OKRs). Owned insights in VP-level forum. Planned and led strategy offsite. Mentored team for professional development.}
+              \resumeItem{Restructured team time management away from low value-add tasks and toward thought leadership by reducing operational and technical debt (streamlined processes to allow stakeholders to self-service, won stakeholder buy-in on service level agreements, clarified roles \& responsibilities, worked with Data Engineering to improve upstream data, increased rigor of coding standards). Reduced time spent on manual tasks and bug bashing by over 50\%.}
               \resumeItem{Collaborated with Detection Engineering and Global Scaled Operations to synthesize disparate processes into a method to capture cost savings opportunities created by increases in machine-learning model precision and recall.}
             \resumeItemListEnd
     
-          \resumePosition{Senior Business Analyst - YouTube}{Singapore}{2019 - 2021}
+          \resumePosition{Senior Business Analyst - YouTube}{Singapore}{2019–2021}
             \resumeItemListStart
-              \resumeItem{Owned data and statistical analysis for Trust \& Safety content moderation global operations. Developed metrics, generated actionable insights for VP-and-Director-level stakeholders, used data to solve business problems, contributed to strategic planning, project managed cross-functional initiatives to increase operational efficiency, conducted root cause analysis into metric trends, wrote business requirement documents (BRDs), coded Structured Query Language (SQL) data pipelines, built data visualizations and dashboards. Earned level promotion.}
-              \resumeItem{Developed and scaled a vendor utilization metric (defined metric, won buy-in from cross-functional stakeholders, coded SQL pipeline, built reporting, owned roll-out). Collaborated with cross-functional stakeholders to project manage initiatives to improve it. Increased utilization from 55\% to 85\%, preventing $\sim$\$45M/year in lost spend.}
+              \resumeItem{Owned data and statistical analysis for Trust \& Safety content moderation global operations. Developed metrics, generated actionable insights for VP and Director-level stakeholders, contributed to strategic planning, project-managed cross-functional initiatives, conducted root cause analysis into metric trends, conducted sensitivity analysis, worked with real-time and time series data, wrote business requirement documents (BRDs), coded Structured Query Language (SQL) data pipelines, built visualizations and dashboards. Earned level promotion.}
+              \resumeItem{Developed and scaled a vendor utilization metric (defined metric, won buy-in from cross-functional stakeholders, coded SQL pipeline, built reporting, owned roll-out). Collaborated with cross-functional stakeholders to project-manage initiatives that increased utilization from 55\% to 85\%, preventing $\sim$\$45M/year in lost spend.}
               \resumeItem{Coded SQL pipeline to support COVID business contingency planning. Caught and prevented multiple P0 bugs.}
             \resumeItemListEnd
         
         \resumePosition
-          {Financial Analyst - Android}{Singapore}{2017 - 2019}
+          {Financial Analyst - Android}{Singapore}{2017–2019}
           \resumeItemListStart
-            \resumeItem{Owned financial planning and analysis (FP\&A) for Android partnerships in Asia-Pacific. Designed valuation models in Google Sheets. Reviewed partnership deals. Provided actionable insights to business development team. Contributed analysis to strategic plans and pitch decks. Coded data pipeline in SQL, R, and Python.}
+            \resumeItem{Owned financial planning and analysis (FP\&A) for Android partnerships in Asia-Pacific. Designed valuation models in Google Sheets. Owned partnership deal approval. Provided actionable insights to business development team. Contributed analysis to strategic plans and pitch decks. Coded data pipelines in SQL, R, and Python.}
           \resumeItemListEnd
           
         \resumePosition
-          {Solutions Consultant - gTech}{Cambridge, MA / NYC, NY, USA}{2012 - 2017}
+          {Solutions Consultant - gTech}{Cambridge, MA / NYC, NY, USA}{2012–2017}
           \resumeItemListStart
-            \resumeItem{Debugged issues in Display Network advertising bidding algorithms for clients and internal stakeholders. Queried SQL databases. Built reporting. Contributed to product development.  Earned level promotion.}
+            \resumeItem{Debugged Display Network bidding algorithm and conversion tracking issues for clients and internal stakeholders. Queried SQL databases. Conducted A/B tests. Contributed to product development.  Earned level promotion.}
           \resumeItemListEnd
     
         \resumePositionListEnd
@@ -180,7 +182,7 @@
   \resumeSentencesListStart
   
       \resumeSentences
-      {Experience prior to 2012 includes analytical roles at two venture-backed startups, Meebo (social media and digital advertising) and Mindset Media (advertising tech) as well as in management consulting at Alliance Consulting Group.}
+      {Experience prior to 2012 includes analytical roles at two venture-backed startups, Meebo (social media and digital advertising) and Mindset Media (advertising tech), as well as in management consulting at Alliance Consulting Group.}
       
   \resumeSentencesListEnd
   
@@ -193,7 +195,7 @@
      \textbf{Software Development Tools}{: Git, Visual Studio Code} \\
      \textbf{Statistics}{: Causal Inference (e.g., t-test, F-test, chi-squared test), Supervised Machine Learning (e.g., GLMs such as Logistic Regression, Mixed Models), Unsupervised Machine Learning (e.g., PCA, PCoA, NMDS, K-means clustering)} \\
      \textbf{Bioinformatics Software \& Systems}{: BLAST, BOLD, LULU, DADA2, IDTAXA, GeneiousPrime} \\
-     \textbf{Molecular Biology}{: DNA Extraction, Cleanup, \& Quantification, Polymerase Chain Reaction, Gel Electrophoresis, MiSeq Sequencing, Sanger Sequencing}
+     \textbf{Molecular Biology}{: DNA Extraction, PCR, Gel Electrophoresis, NGS (MiSeq), Sanger Sequencing}
     }}
  \end{itemize}
 
