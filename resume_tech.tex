@@ -34,11 +34,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -48,7 +48,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -70,19 +70,39 @@
 }
 
 \newcommand{\resumePosition}[3]{
-  \vspace{-2pt}\item
+  \item
     \begin{tabular*}{0.96\textwidth}[t]{p{9cm}p{6cm}@{\extracolsep{\fill}}r}
       #1 & \textit{#2} & \textit{#3} \\
     \end{tabular*}
 }
 
 \newcommand{\resumeEducation}[6]{
-  \vspace{-2pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{ #4} \\
       \small{#5} & #6
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}
+}
+
+\newcommand{\resumeEducationTwo}[8]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+      \small{#5} & #6 \\
+      \small{#7} & #8
+    \end{tabular*}
+}
+
+\newcommand{\resumeEducationThree}[5]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{@{\extracolsep{\fill}}lccl}
+      \textbf{#1} & \textit{#2} & {#3} & {#4} \\
+    \end{tabular*}
+    \begin{tabular*}{0.97\textwidth}[t]{l}
+      \small{#5}
+    \end{tabular*}
 }
 
 \newcommand{\resumeSentences}[1]{
@@ -90,16 +110,6 @@
     \begin{flushleft}
       \textit{\small{#1}} \\
     \end{flushleft}
-}
-
-\newcommand{\resumeEducationTwo}[8]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{#3} & \textit{ #4} \\
-      \small{#5} & #6 \\
-      \small{#7} & #8
-    \end{tabular*}\vspace{-8pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -126,20 +136,26 @@
     \textbf{\Huge \scshape Michael Jordan} \\
     \small +44 7480-743079 $|$ Based in London, UK $|$ \href{mailto:mgjordan314@gmail.com}{\underline{mgjordan314@gmail.com}} $|$
     \href{https://github.com/MGJordan}{\underline{github.com/MGJordan}}
-\end{center}\vspace{-20pt}
+\end{center}
 
+  \resumeSentencesListStart
+  
+      \resumeSentences
+      {Tech leader in data \& analytics. Left Google voluntarily in 2023 for a career sabbatical to pursue a personal interest in ecology by enrolling in a full-time graduate program.}
+      
+  \resumeSentencesListEnd\vspace{-15pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeEducationListStart
-    \resumeEducationTwo
-      {Imperial College}{London, UK}
-      {Master of Science (MSc) in Ecology (Distinction)}{2023–2024}{- Dissertation using DNA metabarcoding and machine learning to measure biodiversity. Coded in R.}{}
-      {- Coursework in Machine Learning, Advanced Statistics, Genomics, Carbon Cycle, GIS.}{}
-    \resumeEducation
-      {Harvard University}{Cambridge, MA, USA}
-      {Bachelor of Arts (BA) in Economics}{2004–2008}{- Coursework in Econometrics, Statistics, Linear Algebra, Corporate Finance, Capital Markets.}{}
-  \resumeEducationListEnd\vspace{-5pt}
+    \resumeEducationThree
+      {Imperial College}{MSc in Ecology (Distinction)}
+      {London, UK}{2023–2024}
+      {- Coursework in Machine Learning, Advanced Statistics, Genomics, Carbon Cycle, GIS.}\vspace{-5pt}
+    \resumeEducationThree
+      {Harvard University}{BA in Economics}
+      {Cambridge, MA, USA}{2004–2008}{- Coursework in Econometrics, Statistics, Linear Algebra, Corporate Finance, Capital Markets.}
+  \resumeEducationListEnd\vspace{-15pt}
     
 
 %-----------EXPERIENCE-----------
@@ -150,36 +166,38 @@
 
         \resumePositionListStart
         
-          \resumePosition{Analytics Lead - YouTube}{Singapore}{2021–2023}
+          \resumePosition{Business Analyst Manager - YouTube}{Singapore}{2021–2023}
             \resumeItemListStart
-              \resumeItem{Business Analyst Manager owning data and statistical analysis into operations (enforcement decision quality, vendor utilization) for YouTube Trust \& Safety, $\sim$400 person org requiring 24/7 global coverage.}
-              \resumeItem{Managed 3-person BA team owning business metrics and causal inference testing. Collaborated with cross-functional Directors to develop strategic plans, annual goals, and quarterly OKRs. Owned insights in VP forum. Mentored team for professional development. Communicated complex results to non-technical audiences.}
-              \resumeItem{Developed a model in collaboration with Detection Engineering and Global Scaled Operations teams to capture cost savings created by improvements in machine learning detection models. Saved hundreds of headcount per cycle.}
-              \resumeItem{Reduced operational and technical debt (streamlined processes, increased SQL coding standards, worked with Data Engineering team to improve upstream data). Cut time spent on bug-bashing and manual tasks by over 50\%.}
+              \resumeItem{Analytics Lead (L5) owning data and statistical analysis into operations (enforcement decision quality, vendor operations) for YouTube Trust \& Safety ($\sim$400 person org requiring 24/7 global coverage).}
+              \resumeItem{Managed 3-person BA team supporting business metrics (metric development, causal inference testing, root cause analysis, strategic advisory). Set annual goals, quarterly OKRs, and KPIs in collaboration with cross-functional Directors. Ran strategy offsite. Mentored team for professional development.}
+              \resumeItem{Collaborated with Directors of Detection Engineering and Vendor Operations to develop a model to capture vendor cost savings opportunities created by detection ML model improvements. \textbf{Saved \$2M-\$4M in vendor cost in typical headcount governance cycle}.}
+              \resumeItem{Reduced operational and technical debt by streamlining processes, collaborating with Data Engineering team to improve upstream data, and aligning with stakeholders on SLAs and R\&R. \textbf{Cut time spent bug-bashing by 53\%}.}
             \resumeItemListEnd
     
           \resumePosition{Senior Business Analyst - YouTube}{Singapore}{2019–2021}
             \resumeItemListStart
-              \resumeItem{Owned data and statistical analysis into vendor operations for YouTube Trust \& Safety. Coded SQL pipelines in a production environment using BigQuery to handle large (\textgreater 1 TB) datasets, developed business metrics, set KPIs, used time series data to generate insights for VPs and Directors, conducted root cause analysis, conducted hypothesis tests using R, built visualizations in Google Data Studio. GoogleSQL readability. Level promotion.}
-              \resumeItem{Developed, coded, and scaled a vendor utilization metric. Collaborated cross-functionally to project-manage initiatives that increased utilization from 55\% to 85\%. Prevented tens of millions of dollars in lost spend annually.}
+              \resumeItem{Owned data and statistical analysis into vendor operations for YouTube Trust \& Safety.}
+              \resumeItem{Coded production SQL pipelines using BigQuery to query large (\textgreater 1 TB) datasets, developed business metrics, conducted hypothesis tests and root cause analysis into metric trend shifts using R and Python in Colab, owned actionable insights in VP and Director forums, built visualizations using Google Data Studio. \textbf{GoogleSQL readability. Level promotion.}}
+              \resumeItem{Developed a vendor utilization metric. Defined metric, won stakeholder buy-in, coded SQL pipelines, built visualizations, trained FTEs. Project-managed initiatives to increase utilization in collaboration with cross-functional stakeholders. \textbf{Increased utilization from 55\% to 85\%, preventing \$45M in otherwise wasted spend annually}.}
+              \resumeItem{Supported COVID-19 business contingency planning by rapidly coding production SQL pipelines to detect failures in operational systems. \textbf{Caught multiple P0/OMG bugs} that would have caused wide-scale content moderation failures.}
             \resumeItemListEnd
         
         \resumePosition
           {Financial Analyst - Android}{Singapore}{2017–2019}
           \resumeItemListStart
-            \resumeItem{Owned financial planning and analysis for Asia-Pacific Android partnerships. Designed LTV models using Google Sheets. Forecast key metrics trends. Supported Business Development team with financial analysis for pitch decks. Owned deal and PO approval. Coded data pipelines using SQL. Analyzed data using Python and R.}
+            \resumeItem{Owned financial planning and analysis for Asia-Pacific Android partnerships. Modeled customer LTV using Google Sheets. Coded business metric pipelines and forecast trends using Python. Conducted hypothesis tests using R. Supported Business Development team with financial analysis for pitch decks. Owned deal and PO approval. Coded SQL pipelines.}
           \resumeItemListEnd
           
         \resumePosition
           {Technical Product Expert - gTech}{Cambridge, MA, USA}{2014–2017}
           \resumeItemListStart
-            \resumeItem{Debugged AdWords bidding algorithm (Target ROAS, Target CPA) and conversion tracking issues for clients and internal stakeholders. Queried SQL databases. Conducted A/B experiments. Level promotion.}
+            \resumeItem{Debugged issues in Google Ads bidding algorithms, conversion tracking, and ad targeting. Conducted A/B experiments. Collaborated with Product teams to inform feature development. Queried SQL databases. \textbf{Level promotion.}}
           \resumeItemListEnd
 
         \resumePosition
           {Optimization Specialist - gTech}{NYC, NY, USA}{2012–2014}
           \resumeItemListStart
-            \resumeItem{Supported Sales teams and external clients by analyzing Dynamic Remarketing campaign performance to identify opportunities to increase click-through rate (CTR) and conversion rate.}
+            \resumeItem{Analyzed Google Ads Dynamic Remarketing campaigns to improve performance (CTR, conversion rate, CPA). Supported internal Sales teams and external clients.}
           \resumeItemListEnd
     
         \resumePositionListEnd
@@ -189,7 +207,7 @@
   \resumeSentencesListStart
   
       \resumeSentences
-      {Experience prior to 2012 includes analytical roles at two venture-backed startups, Meebo (social media and digital advertising) and Mindset Media (ad tech), as well as in management consulting at Alliance Consulting Group.}
+      {Experience prior to 2012 includes analytical roles at Meebo (social media), Mindset Media (ad tech), and Alliance Consulting.}
       
   \resumeSentencesListEnd
   
@@ -198,9 +216,9 @@
 \vspace{-15pt}\section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages, Software, \& OS}{: SQL (Window Functions, CTEs), R (tidyverse, ggplot2), Python (Pandas, Matplotlib, SciPy), Bash, Spreadsheets (Array Formulas, Pivot Tables), Windows, Linux} \\
-     \textbf{Development \& BI Tools}{: Version Control (Git), Bug Tracking (Google Issue Tracker), SSH, IDEs (Visual Studio Code), Data Visualization (Google Data Studio), Cloud Data Warehousing (BigQuery)} \\
-     \textbf{Statistics \& Machine Learning}{: Causal Inference (t-test), Linear Modeling (Mixed Effect Models, GLMs), Dimensionality Reduction (PCA), Clustering (K-Means), Classification (Logistic Regression), Model Selection (AIC)}
+     \textbf{Languages, Software, \& OS}{: SQL, R, Python, Bash, Spreadsheets, Windows, Linux} \\
+     \textbf{Development \& BI Tools}{: Version Control (Git), Bug Tracking, SSH, IDEs (Visual Studio Code), Data Visualization (Google Data Studio, Tableau), Cloud Data Warehousing (BigQuery), Jupyter Notebooks (Colab)} \\
+     \textbf{Statistics \& ML}{: Causal Inference, Linear Modeling, Dimensionality Reduction, Clustering, Classification, Model Selection}
     }}
  \end{itemize}
 
